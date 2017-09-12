@@ -23,6 +23,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="app.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="buzz\generator.py" />
     <Compile Include="tests\test_generator.py">
       <SubType>Code</SubType>
@@ -37,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include=".travis.yml" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <PropertyGroup>
