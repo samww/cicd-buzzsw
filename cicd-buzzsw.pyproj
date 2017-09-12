@@ -36,11 +36,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="buzz\" />
+    <Folder Include=".travis\" />
     <Folder Include="tests\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include=".travis.yml" />
+    <Content Include=".travis\deploy_dockerhub.sh" />
+    <Content Include="Dockerfile" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <PropertyGroup>
