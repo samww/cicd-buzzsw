@@ -2,7 +2,7 @@
 echo $DOCKER_EMAIL
 echo $DOCKER_USER
 echo $DOCKER_PASS
-docker login -u samww -p dcatp4dock
+docker login -e sam_ww@outlook.com -u samww -p dcatp4dock
 #docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
 #if [ "$TRAVIS_BRANCH" = "master" ]; then
 #    TAG="latest"
