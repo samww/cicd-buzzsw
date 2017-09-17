@@ -9,4 +9,11 @@ script:
   - python -m pytest -v
 
 after_success:
-  - sh .travis/deploy_dockerhub.sh
+- if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push USER/REPO;
+    fi
+	docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG .
+    docker push $TRAVIS_REPO_SLUG
+
+  #- sh .travis/deploy_dockerhub.sh
