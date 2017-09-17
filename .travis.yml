@@ -16,4 +16,4 @@ after_success:
 	docker build -f Dockerfile -t $TRAVIS_REPO_SLUG:$TAG .
     docker push $TRAVIS_REPO_SLUG
 
-  #- sh .travis/deploy_dockerhub.sh
+  #- sh .travis/deploy_dockerhub.sh 
